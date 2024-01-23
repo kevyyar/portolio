@@ -5,7 +5,7 @@ import React from "react";
 import { Navbar } from "@/components";
 
 const muli = localFont({
-  src: "../fonts/Muli-Bold.ttf",
+  src: "../fonts/Muli-Regular.ttf",
   display: "swap",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={muli.className}>
-        <div className="m-5 bg-main">
+        <div className="m-6 bg-main px-14">
           <Navbar />
           <div>{children}</div>
         </div>

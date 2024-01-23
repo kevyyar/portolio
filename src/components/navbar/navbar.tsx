@@ -1,8 +1,13 @@
 import Link from "next/link";
+import localFont from "next/font/local";
 
+const muli = localFont({
+  src: "../../fonts/Muli-Bold.ttf",
+  display: "swap",
+});
 export const Navbar = () => {
   return (
-    <header className="flex justify-between p-5 text-xl">
+    <header className={`flex justify-between py-5 text-xl ${muli.className}`}>
       <div className="font-extrabold">
         <Link href={"/"}>
           Kev<span>The</span>Dev<span>.</span>
