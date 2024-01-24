@@ -1,0 +1,9 @@
+.button-container {
+    @apply relative w-max mt-6;
+}
+.btn {
+    @apply bg-black text-white text-xl cursor-pointer transition-transform duration-[0.2s] relative z-10 px-10 py-4 border-[none] hover:translate-x-1 hover:translate-y-1;
+}
+.placeholder {
+    @apply absolute z-[5] h-[62px] w-[202px] border-2 border-solid border-black left-1 right-0 top-1 bottom-0;
+}

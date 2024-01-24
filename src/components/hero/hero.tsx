@@ -1,5 +1,5 @@
 import { Abril_Fatface } from "next/font/google";
-import { Button } from "@/components";
+import { Button, Navbar } from "@/components";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -7,28 +7,32 @@ const abril = Abril_Fatface({
 });
 export const Hero = () => {
   return (
-    <section className="mt-20 text-center md:text-left md:w-[800px]">
-      <h1
-        className={`text-4xl tracking-wider ${abril.className} mb-8 md:text-5xl`}
-      >
-        Hi, I’m Kevin,{" "}
-        <div className="inline-block relative pb-1">
-          <span className="relative z-10">Web Designer</span>
-          <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
-        </div>
-        <br />
-        and{" "}
-        <div className="inline-block relative pb-1">
-          <span className="relative z-10"> Web Developer</span>
-          <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
-        </div>
-      </h1>
-      <p className="md:leading-7 md:w-[500px] text-[18px]">
-        I design and build beautiful websites for businesses around the globe.
-        If you need a modern and powerful website, send me an email. If we are a
-        good fit, I will give you a time and cost estimate.
-      </p>
-      <Button>hi</Button>
-    </section>
+    <div className="bg-main px-12 min-h-[800px] md:min-h-[970px] lg:px-72 lg:min-h-[850px]">
+      <Navbar />
+      <section className="mt-20 lg:w-[1000px]">
+        <h1
+          className={`text-2xl tracking-wider ${abril.className} mb-8 md:text-4xl lg:text-6xl`}
+        >
+          Hi, I’m Kevin,{" "}
+          <div className="inline-block relative pb-1">
+            <span className="relative z-10">Front-End Developer</span>
+            <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
+          </div>
+          <br />
+          and{" "}
+          <div className="inline-block relative pb-1">
+            <span className="relative z-10"> Web Design Enthusiast</span>
+            <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
+          </div>
+        </h1>
+        <p className="lg:leading-7 lg:w-[500px] text-[18px]">
+          I craft elegant and effective websites for businesses globally,
+          combining modern design with top-notch front-end development.
+          Interested in elevating your online presence? Reach out for a custom
+          time and cost estimate tailored to your project needs.
+        </p>
+        <Button>see my work</Button>
+      </section>
+    </div>
   );
 };
