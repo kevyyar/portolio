@@ -1,0 +1,6 @@
+.image-container {
+    @apply w-full h-auto overflow-hidden relative;
+}
+.image-container img {
+    @apply w-full h-auto object-cover;
+}

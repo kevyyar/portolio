@@ -11,7 +11,7 @@ export const Hero = () => {
       <Navbar />
       <section className="mt-20 lg:w-[1000px]">
         <h1
-          className={`text-5xl tracking-wider ${abril.className} mb-8 md:text-4xl lg:text-6xl`}
+          className={`text-3xl tracking-wider ${abril.className} mb-8 md:text-4xl lg:text-7xl`}
         >
           Hi, I’m Kevin,{" "}
           <div className="inline-block relative pb-1">
