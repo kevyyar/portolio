@@ -6,8 +6,9 @@ interface Props {
 export const Button = ({ children }: Props) => {
   return (
     <div className="button-container">
-      <div className="placeholder"></div>
-      <button className="btn">{children}</button>
+      <div className="button-border">
+        <button className="btn">{children}</button>
+      </div>
     </div>
   );
 };

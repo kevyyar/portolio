@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         main: "#F9EFE7",
         secondary: "#FFE872",
+        subtitle: "#B7B4B9",
       },
     },
   },

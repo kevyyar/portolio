@@ -11,18 +11,18 @@ export const Hero = () => {
       <Navbar />
       <section className="mt-20 lg:w-[1000px]">
         <h1
-          className={`text-2xl tracking-wider ${abril.className} mb-8 md:text-4xl lg:text-6xl`}
+          className={`text-5xl tracking-wider ${abril.className} mb-8 md:text-4xl lg:text-6xl`}
         >
           Hi, I’m Kevin,{" "}
           <div className="inline-block relative pb-1">
             <span className="relative z-10">Front-End Developer</span>
-            <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
+            <span className="absolute bottom-1 right-0 left-0 z-0 mx-auto md:h-4 md:bg-secondary lg:h-7"></span>
           </div>
           <br />
           and{" "}
           <div className="inline-block relative pb-1">
             <span className="relative z-10"> Web Design Enthusiast</span>
-            <span className="absolute bottom-1 right-0 left-0 h-8 md:bg-secondary z-0 mx-auto"></span>
+            <span className="absolute bottom-1 right-0 left-0 mx-auto md:h-4 z-0 md:bg-secondary lg:h-7"></span>
           </div>
         </h1>
         <p className="lg:leading-7 lg:w-[500px] text-[18px]">
